@@ -1,11 +1,11 @@
-interface Data {
+interface DataExper {
   title: string;
   description: string;
   company: string;
   date: string;
 }
 
-function ExperItem(data: Data) {
+function ExperItem(data: DataExper) {
   return (
     <>
       <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">

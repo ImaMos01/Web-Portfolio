@@ -2,6 +2,7 @@ import ExperItem from "../components/ExperItem";
 
 const experienceList = [
   {
+    id: 0,
     date: "Enero 2022 - Abril 2022",
     title: "Full-stack",
     company: "Femaco",
@@ -16,7 +17,7 @@ function Experience() {
         <h2 className="pb-10">Experiencia Laboral</h2>
         <ol className="relative border-s border-gray-200 dark:border-gray-700 mx-4">
           {experienceList.map((it) => (
-            <li className="mb-10 ms-6">
+            <li key={it.id} className="mb-10 ms-6">
               <ExperItem
                 date={it.date}
                 title={it.title}
