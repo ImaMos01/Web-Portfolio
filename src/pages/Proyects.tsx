@@ -10,6 +10,16 @@ const proyectList = [
       "https://static1.e621.net/data/10/0c/100c62e82bab49fe439e8e2f175d6d47.png",
     tags: ["html", "css", "javascript"],
   },
+  {
+    id: 1,
+    title: "hola",
+    description: "hi",
+    link: "#",
+    github: "#",
+    image:
+      "https://static1.e621.net/data/10/0c/100c62e82bab49fe439e8e2f175d6d47.png",
+    tags: ["html", "css", "javascript"],
+  },
 ];
 
 function Proyects() {
