@@ -2,18 +2,31 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@font-face {
+  font-family: Nunito;
+  src: local(Nunito), url(../public/fonts/Nunito-VariableFont_wght.ttf);
+}
+
 html {
   scroll-behavior: smooth;
+  font-family: Nunito;
 }
 
 body {
   display: flex;
   justify-content: center;
   height: 100vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
 }
 
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .body.adaptive {
+    background: linear-gradient(to right, #ece9e6, #ffffff);
   }
 }

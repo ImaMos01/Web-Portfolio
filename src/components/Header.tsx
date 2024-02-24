@@ -1,11 +1,19 @@
 function Header() {
   return (
-    <header className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 pt-14">
-      <nav className="flex flex-row gap-x-6 justify-center items-center text-white">
-        <a href="#proyects">Proyectos</a>
-        <a href="#experience">Experiencia</a>
-        <a href="#technology">Tecnologías</a>
-        <a href="#aboutme">Sobre mi</a>
+    <header className="fixed w-full flex justify-center items-center z-20 top-0 start-0 pt-10">
+      <nav className="flex flex-row gap-x-2 md:gap-x-6 text-gray-900 dark:text-white text-lg md:text-xl font-semibold px-4 py-2 rounded-full bg-grey-400 dark:bg-gray-600">
+        <a href="#proyects" className="dark:hover:text-blue-500">
+          Proyectos
+        </a>
+        <a href="#experience" className="dark:hover:text-blue-500">
+          Experiencia
+        </a>
+        <a href="#technology" className="dark:hover:text-blue-500">
+          Tecnologías
+        </a>
+        <a href="#aboutme" className="dark:hover:text-blue-500">
+          Sobre mí
+        </a>
       </nav>
     </header>
   );
