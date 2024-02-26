@@ -1,3 +1,5 @@
+import { RiBriefcase2Line } from "react-icons/ri";
+
 import ExperItem from "../components/ExperItem";
 
 const experienceList = [
@@ -14,10 +16,15 @@ function Experience() {
   return (
     <section id="experience" className="w-full mx-auto py-40 lg:w-[740px]">
       <div className="px-3 m-3">
-        <h2 className="pb-10">Experiencia Laboral</h2>
+        <div className="flex flex-row gap-x-2">
+          <RiBriefcase2Line className="size-8 md:size-12" />
+          <h1 className="pb-10 text-3xl md:text-5xl font-bold">
+            Experiencia Laboral
+          </h1>
+        </div>
         <ol className="relative border-s border-gray-200 dark:border-gray-700 mx-4">
           {experienceList.map((it) => (
-            <li key={it.id} className="mb-10 ms-6">
+            <li key={it.id} className="mb-10 ms-8">
               <ExperItem
                 date={it.date}
                 title={it.title}

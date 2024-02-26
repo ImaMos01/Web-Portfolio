@@ -1,4 +1,6 @@
 import ProyectItem from "../components/ProyectItem.tsx";
+import { RiTerminalWindowLine } from "react-icons/ri";
+
 const proyectList = [
   {
     id: 0,
@@ -24,9 +26,15 @@ const proyectList = [
 
 function Proyects() {
   return (
-    <section id="proyects" className="w-full mx-auto py-40 lg:w-[740px]">
+    <section
+      id="proyects"
+      className="w-full mx-auto pt-40 w-[400px] sm:w-[640px] lg:w-[740px]"
+    >
       <div className="ps-3 ms-3">
-        <h3 className="pb-10"> Proyectos</h3>
+        <div className="flex flex-row gap-x-2">
+          <RiTerminalWindowLine className="size-8 md:size-12" />
+          <h1 className="pb-10 text-3xl md:text-5xl font-bold"> Proyectos</h1>
+        </div>
         <ol className="relative">
           {proyectList.map((it) => (
             <li key={it.id} className="mb-5">
