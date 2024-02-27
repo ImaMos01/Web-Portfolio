@@ -9,13 +9,13 @@ interface DataProyect {
 
 function ProyectItem(data: DataProyect) {
   return (
-    <article className="flex flex-row items-center bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700 dark:bg-gray-800">
+    <article className="flex flex-col md:flex-row items-start md:items-center bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700 dark:bg-gray-800 mr-6 md:mr-0">
       <img
-        className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+        className="object-cover w-full rounded-t-lg h-80 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
         src={data.image}
-        alt=""
+        alt={data.image}
       />
-      <div className="flex flex-col justify-between p-4 leading-normal">
+      <div className="flex flex-col justify-between p-4">
         <h5 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
           {data.title}
         </h5>

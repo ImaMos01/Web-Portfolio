@@ -6,19 +6,23 @@ const experienceList = [
   {
     id: 0,
     date: "Enero 2022 - Abril 2022",
-    title: "Full-stack",
+    title: "Desarrollo web full-stack",
     company: "Femaco",
-    description: "desarrollo sas",
+    description:
+      "Desarrollo web full-stack simple con HTML, CSS, JavaScript, PHP y MySQL",
   },
 ];
 
 function Experience() {
   return (
-    <section id="experience" className="w-full mx-auto py-40 lg:w-[740px]">
+    <section
+      id="experience"
+      className="w-full mx-auto pt-40 w-[340px] md:w-[640px] lg:w-[740px]"
+    >
       <div className="px-3 m-3">
         <div className="flex flex-row gap-x-2">
-          <RiBriefcase2Line className="size-8 md:size-12" />
-          <h1 className="pb-10 text-3xl md:text-5xl font-bold">
+          <RiBriefcase2Line className="size-8 md:size-10" />
+          <h1 className="pb-10 text-2xl md:text-4xl font-bold">
             Experiencia Laboral
           </h1>
         </div>

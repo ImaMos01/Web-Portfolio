@@ -28,12 +28,12 @@ function Proyects() {
   return (
     <section
       id="proyects"
-      className="w-full mx-auto pt-40 w-[400px] sm:w-[640px] lg:w-[740px]"
+      className="w-full mx-auto pt-40 w-[340px] md:w-[640px] lg:w-[740px]"
     >
       <div className="ps-3 ms-3">
         <div className="flex flex-row gap-x-2">
-          <RiTerminalWindowLine className="size-8 md:size-12" />
-          <h1 className="pb-10 text-3xl md:text-5xl font-bold"> Proyectos</h1>
+          <RiTerminalWindowLine className="size-8 md:size-10" />
+          <h1 className="pb-10 text-2xl md:text-4xl font-bold"> Proyectos</h1>
         </div>
         <ol className="relative">
           {proyectList.map((it) => (

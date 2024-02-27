@@ -12,20 +12,20 @@ interface techList {
 function TechItem(data: techList) {
   return (
     <article>
-      <h3>{data.title}</h3>
-      <div className="flex flex-row mt-6 pb-4 gap-x-6">
+      <h3 className="text-xl md:text-3xl font-bold">{data.title}</h3>
+      <div className="grid grid-cols-3 sm:grid-cols-4 gap-5 sm:gap-6 mt-6 pb-5 ">
         {data.items.map((it) => (
           <section
             key={it.id}
-            className="w-30 p-2 bg-dark rounded-xl dark:bg-gray-800 flex flex-col items-center"
+            className="lg:w-30 p-1.5 bg-dark rounded-xl dark:bg-gray-800 flex flex-col items-center"
           >
             <img
-              className="h-20 object-cober rounded-xl"
+              className="h-10 lg:h-20 object-cober rounded-xl"
               src={it.logo}
               alt=""
             />
             <div className="p-2">
-              <h2> {it.item} </h2>
+              <h2 className="text-sm md:text-lg font-medium"> {it.item} </h2>
             </div>
           </section>
         ))}

@@ -7,7 +7,7 @@ import {
 
 function Home() {
   return (
-    <section className="w-full mx-auto pt-40 w-[350px] sm:w-[500px] lg:w-[740px] flex flex-col-reverse lg:flex-row">
+    <section className="w-full mx-auto pt-40 w-[300px] md:w-[500px] lg:w-[740px] flex flex-col-reverse lg:flex-row items-center lg:items-start">
       <div className="px-3 m-3">
         {/*download cv*/}
         <a
@@ -16,15 +16,13 @@ function Home() {
           download="imanolCV.pdf"
         >
           <RiFileDownloadLine className="size-6" />
-          <h3 className="text-sm md:text-xl font-semibold pt-1">
-            Descargar CV
-          </h3>
+          <h3 className="text-sm md:text-lg font-semibold">Descargar CV</h3>
         </a>
         {/*about me*/}
-        <h1 className="text-4xl md:text-6xl font-bold pb-3 pt-1.5">
+        <h1 className="text-3xl md:text-5xl font-bold pb-3 pt-1.5">
           Hola, soy Imanol
         </h1>
-        <h2 className=" text-lg md:text-2xl text-pretty font-normal">
+        <h2 className=" text-base md:text-lg text-pretty font-normal">
           años de experiencia. Lorem ipsum dolor sit amet, consectetur
           adipisicing elit. Id sed fuga eum vero nostrum pariatur asperiores
           similique ea? Dolore mollitia quas facilis ab quibusdam at asperiores
@@ -32,13 +30,13 @@ function Home() {
         </h2>
 
         {/*contacts*/}
-        <nav className="flex flex-row mx-auto gap-x-4 pt-10">
+        <nav className="flex flex-col sm:flex-row mx-auto gap-x-4 pt-10">
           <a
             className="dark:bg-gray-600 inline-flex items-center justify-center border rounded-lg dark:hover:bg-blue-500 gap-x-2 px-3 mb-3 py-1"
             href=""
           >
             <RiMailLine className="size-6" />
-            <h3 className="text-lg md:text-2xl font-semibold pt-1">
+            <h3 className="text-base md:text-xl font-semibold pt-1">
               Contáctame
             </h3>
           </a>
@@ -47,14 +45,16 @@ function Home() {
             href="https://www.linkedin.com/in/imanolmos01"
           >
             <RiLinkedinBoxFill className="size-6" />
-            <h3 className="text-lg md:text-2xl font-semibold pt-1">Linkedin</h3>
+            <h3 className="text-base md:text-xl font-semibold pt-1">
+              Linkedin
+            </h3>
           </a>
           <a
             className="dark:bg-gray-600 inline-flex items-center justify-center border rounded-lg dark:hover:bg-blue-500 gap-x-2 px-3 mb-3 py-1"
             href="https://github.com/ImaMos01"
           >
             <RiGithubFill className="size-6" />
-            <h3 className="text-lg md:text-2xl font-semibold pt-1">GitHub</h3>
+            <h3 className="text-base md:text-xl font-semibold pt-1">GitHub</h3>
           </a>
         </nav>
       </div>
