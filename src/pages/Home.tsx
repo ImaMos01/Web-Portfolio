@@ -6,6 +6,14 @@ import {
 } from "react-icons/ri";
 
 function Home() {
+  /*
+    First section of the pages that bring a preview of the profile
+
+    Args:
+      empty
+    Return:
+      A simple text with buttons and a image
+  */
   return (
     <section className="w-full mx-auto pt-40 w-[300px] md:w-[500px] lg:w-[740px] flex flex-col-reverse lg:flex-row items-center lg:items-start">
       <div className="px-3 m-3">
@@ -23,10 +31,9 @@ function Home() {
           Hola, soy Imanol
         </h1>
         <h2 className=" text-base md:text-lg text-pretty font-normal">
-          años de experiencia. Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Id sed fuga eum vero nostrum pariatur asperiores
-          similique ea? Dolore mollitia quas facilis ab quibusdam at asperiores
-          quia impedit omnis soluta.
+          Soy un egresado de ciencia de la computación apasionado por el
+          desarrollo de software y en la búsqueda de oportunidades para aplicar
+          mis conocimientos teóricos en proyectos prácticos.
         </h2>
 
         {/*contacts*/}

@@ -14,11 +14,20 @@ const experienceList = [
 ];
 
 function Experience() {
+  /*
+    Section that describe the job experience
+    
+    Args:
+      empty
+    Return:
+      List of items that describe differents job experiences
+  */
   return (
     <section
       id="experience"
       className="w-full mx-auto pt-40 w-[340px] md:w-[640px] lg:w-[740px]"
     >
+      {/* Icon */}
       <div className="px-3 m-3">
         <div className="flex flex-row gap-x-2">
           <RiBriefcase2Line className="size-8 md:size-10" />
@@ -26,6 +35,8 @@ function Experience() {
             Experiencia Laboral
           </h1>
         </div>
+
+        {/* List of experience */}
         <ol className="relative border-s border-gray-200 dark:border-gray-700 mx-4">
           {experienceList.map((it) => (
             <li key={it.id} className="mb-10 ms-8">

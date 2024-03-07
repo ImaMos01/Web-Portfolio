@@ -8,17 +8,30 @@ interface DataProyect {
 }
 
 function ProyectItem(data: DataProyect) {
+  /*
+    card item for proyects
+    
+    Args: 
+      DataProyect: information about the proyect
+    return:
+      card item
+  */
   return (
     <article className="flex flex-col md:flex-row items-start md:items-center bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700 dark:bg-gray-800 mr-6 md:mr-0">
+      {/* Image of the proyect */}
       <img
         className="object-cover w-full rounded-t-lg h-80 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
         src={data.image}
         alt={data.image}
       />
+
+      {/* description of the proyect */}
       <div className="flex flex-col justify-between p-4">
         <h5 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
           {data.title}
         </h5>
+
+        {/*Frameworks used */}
         <div className="mb-2 flex flex-row gap-x-6 dark:text-white">
           <button>css</button>
           <button>html</button>
@@ -27,6 +40,8 @@ function ProyectItem(data: DataProyect) {
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
           {data.description}
         </p>
+
+        {/* links to the proyects */}
         <nav className="flex flex-row gap-x-4 dark:text-white">
           <a
             href={data.github}

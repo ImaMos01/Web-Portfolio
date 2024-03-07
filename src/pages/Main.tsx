@@ -5,6 +5,13 @@ import Technology from "./Technology";
 import AboutMe from "./AboutMe";
 
 function Main() {
+  /* 
+    Merge the componenets of the protafiolio
+    Args:
+      empty
+    Return:
+      All the components from Pages
+  */
   return (
     <main>
       <Home />

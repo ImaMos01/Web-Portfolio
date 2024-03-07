@@ -2,13 +2,24 @@ import useClipboardCopy from "../hooks/useClipboardCopy";
 import { RiMailLine } from "react-icons/ri";
 
 function Footer() {
+  /*
+    Make the footer of the page
+    
+    Args: 
+      empty
+    return:
+      the footer  
+  */
   const copyToClipBoard = useClipboardCopy();
   return (
     <footer className="bottom-0 left-0 z-20 w-full p-4 rounded-xl dark:bg-gray-800">
+      {/*Icon */}
       <div className="flex flex-row gap-x-2 items-center mb-2">
         <RiMailLine className="size-4 md:size-6" />
         <h3 className="text-lg md:text-2xl font-bold">Mail</h3>
       </div>
+
+      {/*email section */}
       <div className="grid grid-cols-8 gap-2 w-full max-w-[23rem]">
         <label htmlFor="email" className="sr-only">
           email
@@ -20,6 +31,7 @@ function Footer() {
           value="imoscosoa@unsa.edu.pe"
           disabled
         />
+        {/*Copy email to the clipboard */}
         <button
           onClick={() => copyToClipBoard("imoscosoa@unsa.edu.pe")}
           data-copy-to-clipboard-target="imoscosoa@unsa.edu.pe"
