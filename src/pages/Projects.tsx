@@ -1,7 +1,7 @@
-import ProyectItem from "../components/ProyectItem.tsx";
+import ProjectItem from "../components/ProjectItem.tsx";
 import { RiTerminalWindowLine } from "react-icons/ri";
 
-const proyectList = [
+const projectList = [
   {
     id: 0,
     title: "hola",
@@ -24,14 +24,14 @@ const proyectList = [
   },
 ];
 
-function Proyects() {
+function Projects() {
   /**
-    Section that describe each proyect
+    Section that describe each project
     
     Args:
       empty
     Return:
-      List of items that describe differents proyects
+      List of items that describe differents projects
   */
   return (
     <section
@@ -46,9 +46,9 @@ function Proyects() {
         </div>
         {/* List of experience */}
         <ol className="relative">
-          {proyectList.map((it) => (
+          {projectList.map((it) => (
             <li key={it.id} className="mb-5">
-              <ProyectItem
+              <ProjectItem
                 title={it.title}
                 description={it.description}
                 link={it.description}
@@ -63,4 +63,4 @@ function Proyects() {
   );
 }
 
-export default Proyects;
+export default Projects;

@@ -1,4 +1,4 @@
-interface DataProyect {
+interface DataProject {
   title: string;
   description: string;
   link: string;
@@ -7,12 +7,12 @@ interface DataProyect {
   tags?: string[];
 }
 
-function ProyectItem(data: DataProyect) {
+function ProjectItem(data: DataProject) {
   /*
-    card item for proyects
+    card item for projects
     
     Args: 
-      DataProyect: information about the proyect
+      DataProyect: information about the project
     return:
       card item
   */
@@ -61,4 +61,4 @@ function ProyectItem(data: DataProyect) {
   );
 }
 
-export default ProyectItem;
+export default ProjectItem;

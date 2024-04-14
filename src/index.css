@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: Nunito;
-  src: local(Nunito), url(../public/fonts/Nunito-VariableFont_wght.ttf);
+  src: local(Nunito), url(../fonts/Nunito-VariableFont_wght.ttf);
 }
 
 html {
@@ -23,12 +23,5 @@ body {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  .body.adaptive {
-    background: linear-gradient(to right, #ece9e6, #ffffff);
-    color: black;
   }
 }
