@@ -1,4 +1,5 @@
 import { useCallback } from "react";
+import { toast } from 'sonner';
 
 function useClipboardCopy() {
   /*
@@ -9,13 +10,12 @@ function useClipboardCopy() {
   Return:
     A callback function that copy the text to the clipboard
   */
-  const copyToClipboard = useCallback((text) => {
+  const copyToClipboard = useCallback((text:string) => {
     if (navigator.clipboard) {
       navigator.clipboard
         .writeText(text)
         .then(() => {
-          alert("Correo copiado");
-          console.log("text copied to clipboard");
+          toast.success('¡Correo copiado!');
         })
         .catch((err) => {
           console.error("failed", err);

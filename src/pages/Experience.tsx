@@ -1,17 +1,7 @@
 import { RiBriefcase2Line } from "react-icons/ri";
 
 import ExperItem from "../components/ExperItem";
-
-const experienceList = [
-  {
-    id: 0,
-    date: "Enero 2022 - Abril 2022",
-    title: "Desarrollo web full-stack",
-    company: "Femaco",
-    description:
-      "Desarrollo web full-stack simple con HTML, CSS, JavaScript, PHP y MySQL",
-  },
-];
+import { experienceList } from "../assets/experienceList.ts";
 
 function Experience() {
   /*
@@ -37,7 +27,7 @@ function Experience() {
         </div>
 
         {/* List of experience */}
-        <ol className="relative border-s border-gray-200 dark:border-gray-700 mx-4">
+        <ol className="relative border-s border-gray-700 mx-4">
           {experienceList.map((it) => (
             <li key={it.id} className="mb-10 ms-8">
               <ExperItem

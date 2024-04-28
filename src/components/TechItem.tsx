@@ -28,7 +28,7 @@ function TechItem(data: techList) {
         {data.items.map((it) => (
           <section
             key={it.id}
-            className="lg:w-30 p-1.5 bg-dark rounded-xl dark:bg-gray-800 flex flex-col items-center"
+            className="lg:w-30 p-1.5 rounded-xl bg-gray-800 flex flex-col items-center"
           >
             {/* Image  */}
             <img

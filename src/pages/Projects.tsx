@@ -1,28 +1,7 @@
 import ProjectItem from "../components/ProjectItem.tsx";
 import { RiTerminalWindowLine } from "react-icons/ri";
+import {projectList} from "../assets/projectList.ts";
 
-const projectList = [
-  {
-    id: 0,
-    title: "hola",
-    description: "hi",
-    link: "#",
-    github: "#",
-    image:
-      "https://imgs.search.brave.com/0Z5UajMlgFjlF0G7v-YDlFzccYph22yyMeZDQ4pNx8E/rs:fit:860:0:0/g:ce/aHR0cHM6Ly92YXBv/cjk1LmNvbS9jZG4v/c2hvcC9hcnRpY2xl/cy9Fak9IV3FxVmdB/QWdfVkIud2VicD92/PTE3MDYwOTk2NDMm/d2lkdGg9MjAwMA",
-    tags: ["html", "css", "javascript"],
-  },
-  {
-    id: 1,
-    title: "hola",
-    description: "hi",
-    link: "#",
-    github: "#",
-    image:
-      "https://imgs.search.brave.com/0Z5UajMlgFjlF0G7v-YDlFzccYph22yyMeZDQ4pNx8E/rs:fit:860:0:0/g:ce/aHR0cHM6Ly92YXBv/cjk1LmNvbS9jZG4v/c2hvcC9hcnRpY2xl/cy9Fak9IV3FxVmdB/QWdfVkIud2VicD92/PTE3MDYwOTk2NDMm/d2lkdGg9MjAwMA",
-    tags: ["html", "css", "javascript"],
-  },
-];
 
 function Projects() {
   /**
@@ -51,9 +30,12 @@ function Projects() {
               <ProjectItem
                 title={it.title}
                 description={it.description}
-                link={it.description}
+                link={it.link}
                 github={it.github}
                 image={it.image}
+                tags={it.tags}
+                idate={it.idate}
+                fdate={it.fdate}
               />
             </li>
           ))}

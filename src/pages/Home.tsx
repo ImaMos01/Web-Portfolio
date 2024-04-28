@@ -5,6 +5,7 @@ import {
   RiMailLine,
 } from "react-icons/ri";
 
+import imanolCV from "../assets/imanolCV.pdf";
 function Home() {
   /*
     First section of the pages that bring a preview of the profile
@@ -19,8 +20,8 @@ function Home() {
       <div className="px-3 m-3">
         {/*download cv*/}
         <a
-          className="bg-gray-700 dark:hover:bg-blue-500 rounded-full inline-flex items-center justify-center border gap-x-2 px-3 mb-3 py-1.5"
-          href="#"
+          className="bg-gray-700 hover:bg-gray-900 rounded-full inline-flex items-center justify-center border gap-x-2 px-3 mb-3 py-1.5"
+          href={imanolCV}
           download="imanolCV.pdf"
         >
           <RiFileDownloadLine className="size-6" />
@@ -39,8 +40,8 @@ function Home() {
         {/*contacts*/}
         <nav className="flex flex-col sm:flex-row mx-auto gap-x-4 pt-10">
           <a
-            className="dark:bg-gray-600 inline-flex items-center justify-center border rounded-lg dark:hover:bg-blue-500 gap-x-2 px-3 mb-3 py-1"
-            href=""
+            className="bg-gray-600 inline-flex items-center justify-center border rounded-lg hover:bg-gray-800 gap-x-2 px-3 mb-3 py-1"
+            href="#contactme"
           >
             <RiMailLine className="size-6" />
             <h3 className="text-base md:text-xl font-semibold pt-1">
@@ -48,8 +49,9 @@ function Home() {
             </h3>
           </a>
           <a
-            className="dark:bg-gray-600 inline-flex items-center justify-center border rounded-lg dark:hover:bg-blue-500 gap-x-2 px-3 mb-3 py-1"
+            className="bg-gray-600 inline-flex items-center justify-center border rounded-lg hover:bg-gray-800 gap-x-2 px-3 mb-3 py-1"
             href="https://www.linkedin.com/in/imanolmos01"
+            target="_blank"
           >
             <RiLinkedinBoxFill className="size-6" />
             <h3 className="text-base md:text-xl font-semibold pt-1">
@@ -57,8 +59,9 @@ function Home() {
             </h3>
           </a>
           <a
-            className="dark:bg-gray-600 inline-flex items-center justify-center border rounded-lg dark:hover:bg-blue-500 gap-x-2 px-3 mb-3 py-1"
+            className="bg-gray-600 inline-flex items-center justify-center border rounded-lg hover:bg-gray-800 gap-x-2 px-3 mb-3 py-1"
             href="https://github.com/ImaMos01"
+            target="_blank"
           >
             <RiGithubFill className="size-6" />
             <h3 className="text-base md:text-xl font-semibold pt-1">GitHub</h3>

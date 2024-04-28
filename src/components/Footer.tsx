@@ -1,4 +1,4 @@
-import useClipboardCopy from "../hooks/useClipboardCopy";
+import {useClipboardCopy} from "../hooks/useClipboardCopy";
 import { RiMailLine } from "react-icons/ri";
 
 function Footer() {
@@ -12,7 +12,7 @@ function Footer() {
   */
   const copyToClipBoard = useClipboardCopy();
   return (
-    <footer className="bottom-0 left-0 z-20 w-full p-4 rounded-xl dark:bg-gray-800">
+    <footer id="contactme" className="bottom-0 left-0 z-20 w-full p-4 rounded-xl bg-gray-800">
       {/*Icon */}
       <div className="flex flex-row gap-x-2 items-center mb-2">
         <RiMailLine className="size-4 md:size-6" />
@@ -27,7 +27,7 @@ function Footer() {
         <input
           id="email"
           type="text"
-          className="col-span-6 bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          className="col-span-6 border text-gray-500 text-sm rounded-lg focus:border-blue-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-gray-400 focus:ring-blue-500"
           value="imoscosoa@unsa.edu.pe"
           disabled
         />
@@ -35,7 +35,7 @@ function Footer() {
         <button
           onClick={() => copyToClipBoard("imoscosoa@unsa.edu.pe")}
           data-copy-to-clipboard-target="imoscosoa@unsa.edu.pe"
-          className="col-span-2 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 items-center inline-flex justify-center"
+          className="col-span-2 text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-sm w-full sm:w-auto py-2.5 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800 items-center inline-flex justify-center"
         >
           <span id="default-message">Copiar</span>
         </button>
