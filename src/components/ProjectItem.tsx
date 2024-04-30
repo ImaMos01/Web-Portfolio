@@ -13,7 +13,7 @@ interface DataProject {
   title: string;
   description: string;
   link?: string;
-  github: string;
+  github?: string;
   image: string;
   tags?: Tags[];
   idate: string;
@@ -55,7 +55,7 @@ function ProjectItem(data: DataProject) {
             </span>
           ))}
         </div>
-        <div className="flex flex-row text-sm text-gray-500 mb-2 gap-2">
+        <div className="flex flex-row text-sm text-gray-100 mb-2 gap-2">
         <p >{data.idate}</p> -
         <p >{data.fdate}</p>
         </div>
@@ -65,14 +65,16 @@ function ProjectItem(data: DataProject) {
 
         {/* links to the proyects */}
         <nav className="flex flex-row gap-x-4 text-white">
-          <a
-            href={data.github}
-            target="_blank"
-            className="flex flex-row p-2 items-center gap-1 text-sm font-medium focus:outline-none bg-gray-500 rounded-lg border focus:z-10 focus:ring-4 focus:ring-gray-700 text-white border-gray-200 hover:text-white hover:bg-gray-700"
-          >
-            <RiGithubFill />
-            github
-          </a>
+          {data.github && (
+            <a
+              href={data.github}
+              target="_blank"
+              className="flex flex-row p-2 items-center gap-1 text-sm font-medium focus:outline-none bg-gray-500 rounded-lg border focus:z-10 focus:ring-4 focus:ring-gray-700 text-white border-gray-200 hover:text-white hover:bg-gray-700"
+            >
+              <RiGithubFill />
+              github
+            </a>
+          )}
           {data.link && (
             <a
               href={data.link}

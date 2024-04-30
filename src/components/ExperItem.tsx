@@ -26,10 +26,10 @@ function ExperItem(data: DataExper) {
       <h3 className="mb-1 text-xl md:text-3xl font-semibold text-white">
         {data.title}
       </h3>
-      <time className="block mb-2 text-base md:text-xl font-normal leading-none text-gray-500">
+      <time className="block mb-2 text-base md:text-xl font-normal leading-none text-gray-400">
         {data.date}
       </time>
-      <p className="text-sm md:text-lg font-medium text-gray-400">
+      <p className="text-sm md:text-lg font-medium text-gray-200">
         {data.description}
       </p>
     </>

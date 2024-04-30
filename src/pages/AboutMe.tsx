@@ -1,4 +1,5 @@
 import { RiUserAddLine } from "react-icons/ri";
+import about from "../assets/about.jpg";
 
 function AboutMe() {
   /**
@@ -42,8 +43,8 @@ function AboutMe() {
 
           {/*Image */}
           <img
-            className=" size-40 rounded"
-            src="https://imgs.search.brave.com/Frov6VD-Lk9aqhj4MC7oXcTbCLxj9USrpuSsteJpFPA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9oaXBz/LmhlYXJzdGFwcHMu/Y29tL2htZy1wcm9k/L2ltYWdlcy80ODQy/MDUzMy0yMDQ3MjM1/NjY4NzAzNTU2LTU5/MzA3MzI4MjUwNjky/MjM5MzYtbi0xNTg5/OTg3Mzk0LmpwZz9j/cm9wPTAuOTE0eHc6/MC45MTR4aDswLjA0/MzJ4dywwLjA1NTN4/aCZyZXNpemU9NjQw/Oio"
+            className=" size-48 rounded"
+            src={about}
             alt="profile picture"
           />
         </article>
